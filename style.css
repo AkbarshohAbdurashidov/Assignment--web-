@@ -1,0 +1,1105 @@
+/* ====== Global Reset ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+}
+
+/* ====== Navbar Styles ====== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f9f9f9;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #673ab7;
+}
+
+.add-space,
+.login {
+    background-color: #ff6b35;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.add-space:hover,
+.login:hover {
+    background-color: #e65c26;
+}
+
+/* ====== Hero Section ====== */
+.hero {
+    background: url('./img/image 2.png') center/cover no-repeat;
+    height: 800px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem 1rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.hero-buttons .btn-primary,
+.hero-buttons .btn-secondary {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.hero-buttons .btn-primary {
+    background-color: #ff6b35;
+    color: #fff;
+}
+
+.hero-buttons .btn-primary:hover {
+    background-color: #e65c26;
+}
+
+.hero-buttons .btn-secondary {
+    background-color: #ffffff;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.hero-buttons .btn-secondary:hover {
+    background-color: #f4f4f4;
+}
+
+/* ====== Features Section ====== */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 1rem;
+    background-color: #f4f4f4;
+}
+
+.feature-item {
+    background-color: #ffffff;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    flex: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ====== Office Types Section ====== */
+.office-types {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.office-types h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #673ab7;
+}
+
+.office-types p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.office-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    max-width: 300px;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ====== Collaboration Section ====== */
+.collaboration {
+    background-color: #673ab7;
+    color: #ffffff;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.collaboration h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.collaboration p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.collaboration .btn-primary {
+    background-color: #ff6b35;
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.collaboration .btn-primary:hover {
+    background-color: #e65c26;
+}
+
+/* ====== Footer Section ====== */
+footer {
+    background-color: #333;
+    color: #ffffff;
+    padding: 2rem 1rem;
+}
+
+.footer-sections {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.footer-section h3 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: #ff6b35;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section li {
+    margin: 0.5rem 0;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #ff6b35;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+/* ====== Responsive Design ====== */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .office-cards {
+        flex-direction: column;
+    }
+
+    .footer-sections {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero-buttons .btn-primary,
+    .hero-buttons .btn-secondary {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .card {
+        padding: 1rem;
+    }
+}
+
+/* ========= About Style ======== */
+
+/* Umumiy uslublar */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+h1, h2, h3 {
+    color: #222;
+    text-align: center;
+}
+
+p {
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004aad;
+    color: white;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar .nav-links li a:hover {
+    text-decoration: underline;
+}
+
+.navbar button {
+    background-color: white;
+    color: #004aad;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.navbar button:hover {
+    background-color: #003580;
+    color: white;
+}
+
+/* About Section */
+.about {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 10px;
+}
+
+.about ul {
+    list-style: disc;
+    padding-left: 40px;
+    text-align: left;
+}
+
+/* Mission Section */
+.mission {
+    padding: 40px 20px;
+    background-color: #f1f1f1;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 10px;
+}
+
+.mission ul {
+    list-style: square;
+    padding-left: 40px;
+    text-align: left;
+}
+
+/* Values Section */
+.values {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.values-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.value-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    max-width: 250px;
+    text-align: center;
+}
+
+.value-item h3 {
+    margin-bottom: 10px;
+}
+
+/* Team Section */
+.team {
+    padding: 40px 20px;
+    background-color: #f1f1f1;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 10px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    max-width: 200px;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+
+.team-member p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 10px;
+}
+
+.why-choose-us ul {
+    list-style: circle;
+    padding-left: 40px;
+    text-align: left;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 40px 20px;
+    background-color: #f1f1f1;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.testimonial {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial h4 {
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #004aad;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-sections {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    font-size: 14px;
+}
+
+/* Responsive Design */
+
+/* Tablet (768px va kichikroq) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .values-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Mobile (480px va kichikroq) */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar .logo {
+        font-size: 20px;
+    }
+
+    .navbar .nav-links {
+        gap: 5px;
+    }
+
+    .navbar button {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
+    .about, .mission, .values, .team, .why-choose-us, .testimonials {
+        padding: 20px 10px;
+        margin: 10px auto;
+    }
+
+    .value-item, .team-member {
+        max-width: 100%;
+    }
+}
+
+/* Contact Styles */
+
+
+/* Umumiy uslublar */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+h1, h2, h3 {
+    color: #222;
+    text-align: center;
+}
+
+p {
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004aad;
+    color: white;
+    padding: 10px 20px;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar .nav-links li a:hover {
+    text-decoration: underline;
+}
+
+.navbar button {
+    background-color: white;
+    color: #004aad;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.navbar button:hover {
+    background-color: #003580;
+    color: white;
+}
+
+/* Contact Section */
+.contact {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 10px;
+}
+
+.contact ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.contact ul li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.contact-form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contact-form form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #004aad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #003580;
+}
+
+/* Footer */
+footer {
+    background-color: #004aad;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-sections {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    font-size: 14px;
+}
+
+/* Responsive Design */
+
+/* Tablet (768px va kichikroq) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-form form {
+        padding: 0 10px;
+    }
+}
+
+/* Mobile (480px va kichikroq) */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar .logo {
+        font-size: 20px;
+    }
+
+    .navbar .nav-links {
+        gap: 5px;
+    }
+
+    .navbar button {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
+    .contact, .footer-sections {
+        padding: 20px 10px;
+    }
+}
+
+/* ======== Services Style */
+
+/* Why Choose Us Section */
+.why-choose-us {
+    background-color: #f3f3f3;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.why-choose-us .reasons {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.reason-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: calc(33.333% - 40px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reason-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.testimonial-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 600px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-item p {
+    font-style: italic;
+    color: #555;
+}
+
+.testimonial-item span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #004aad;
+}
+
+
+/* Umumiy uslublar */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3 {
+    color: #222;
+    text-align: center;
+}
+
+p {
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004aad;
+    color: white;
+    padding: 10px 20px;
+}
+
+.navbar .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar .nav-links li a:hover {
+    text-decoration: underline;
+}
+
+.navbar button {
+    background-color: white;
+    color: #004aad;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.navbar button:hover {
+    background-color: #003580;
+    color: white;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: calc(33.333% - 40px);
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #004aad;
+}
+
+.feature-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #004aad;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-sections {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.footer-section {
+    max-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+
+/* Tablet (768px va kichikroq) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .features {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .feature-item {
+        width: 100%;
+    }
+}
+
+/* Mobile (480px va kichikroq) */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar .logo a {
+        font-size: 20px;
+    }
+
+    .navbar .nav-links {
+        gap: 5px;
+    }
+
+    .navbar button {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
+    .features {
+        padding: 10px;
+    }
+
+    .feature-item {
+        padding: 15px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    .footer-sections {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}
